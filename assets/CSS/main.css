@@ -1,0 +1,66 @@
+.herosection {
+    background-color: #201E1E;
+    background-image: url(/assets/IMGS/BG.jpg);
+}
+
+.titulo-padrao {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: white;
+    margin: 1% 15% 5% 15%;
+}
+
+
+.titulo-padrao .marcado {
+    background: rgb(228, 16, 56);
+    background: linear-gradient(90deg, rgba(228, 16, 56, 1) 0%, rgba(231, 61, 27, 1) 100%);
+    line-height: 3.6rem;
+}
+
+.botao-padrao {
+    display: inline-block;
+    background: rgb(228, 16, 56);
+    background: linear-gradient(90deg, rgba(228, 16, 56, 1) 0%, rgba(231, 61, 27, 1) 100%);
+    border-color: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 2rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.botao-padrao:hover, .botao-padrao:focus {
+    background: linear-gradient(90deg, rgba(231, 61, 27, 1) 0%, rgba(228, 16, 56, 1) 100%);
+    color: white;
+    border-radius: 1rem;
+}
+
+.vagas-acafe {
+    background-color: #e5222e;
+    height: 40vh;
+}
+
+.vagas-acafe-container {
+    margin: 0%;
+}
+
+.vagas-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+}
+
+.titulo-vagas {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 5rem;
+    color: white;
+    margin: 0;
+}
