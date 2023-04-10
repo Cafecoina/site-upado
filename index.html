@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
     <title>Método ACAFE</title>
 
     <!--Melhora nos mecanismos de busca -->
-    <meta charset="UTF-8">
-    <meta name="description" content="Quem mais aprova nos vestibulares, prepara você para passar em medicia em 2023">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Quem mais aprova nos vestibulares, prepara você para passar em medicia em 2023" />
     <meta name="keywords"
-        content="ACAFE, Aprovação na ACAFE, Preparação para a ACAFE, Vestibular da ACAFE, Método de aprovação para a ACAFE, Curso preparatório para a ACAFE, Medicina na ACAFE, Melhores resultados na ACAFE, Melhor preparação para a ACAFE, Santa Catarina, Aprovação em Santa Catarina">
-    <meta name="robots" content="index">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        content="ACAFE, Aprovação na ACAFE, Preparação para a ACAFE, Vestibular da ACAFE, Método de aprovação para a ACAFE, Curso preparatório para a ACAFE, Medicina na ACAFE, Melhores resultados na ACAFE, Melhor preparação para a ACAFE, Santa Catarina, Aprovação em Santa Catarina" />
+    <meta name="robots" content="index" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Fim do Meta Tags -->
 
     <!-- Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/CSS/main.css">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/CSS/main.css" />
+    <link href="assets/EXTRAS/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/EXTRAS/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/EXTRAS/aos/aos.css" rel="stylesheet">
+    <link href="assets/EXTRAS/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/EXTRAS/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/variables.css" rel="stylesheet">
 
     <!-- Scripts Iniciais -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
-
 </head>
 
 <body>
@@ -31,86 +40,108 @@
     <section class="herosection d-flex align-items-center vh-100">
         <div class="container d-flex text-center">
             <div class="row w-100 d-flex align-content-center align-items-center">
-                <div class="col-md-6">
-                    <h2 class="titulo-padrao">Você <strong class="marcado">aprovado</strong> em <strong
-                            class="marcado">medicina</strong> ainda em 2023!</h2>
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                    <h2 class="titulo-padrao">
+                        Você <strong class="marcado">aprovado</strong> em
+                        <strong class="marcado">medicina</strong> ainda em 2023!
+                    </h2>
                     <a class="botao-padrao" href="">Matricule-se</a>
                 </div>
 
                 <div class="col-md-6">
-                    <img class="mx-auto w-100 d-block p-5" src="/assets/IMGS/LOGO+FOTO.png"
-                        alt="Logo da Empresa">
+                    <img class="mx-auto w-100 d-block" src="/assets/IMGS/LOGO-ACAFE.png" alt="Logo da Empresa"
+                        data-aos="zoom-out" data-aos-delay="200" />
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SECTION CONTADOR DE VAGAS -->
-    <section class="vagas-acafe d-flex align-items-center " >
-        <div class="container vagas-acafe-container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <spam class="vagas-text">Restam apenas</spam>
-                    <p class="titulo-vagas" id="vagas"></p>
-                    <spam class="vagas-text">Vagas</spam>
+    <section class="vagas-acafe background d-flex">
+        <div class="container d-flex col-0 align-content-center align-items-center justify-content-center">
+            <spam class="vagas-text1">Restam apenas</spam>
+            <div class="titulo-vagas" id="vagas"></div>
+            <spam class="vagas-text2">Vagas</spam>
+        </div>
+    </section>
+
+    <!-- ======= Featured Services Section ======= -->
+    <main>
+        <section id="div" style="display: none;" class="featured-services">
+            <div class="container">
+                <h2 class="titulo-padrao text-center">
+                    O método <strong class="marcado">aprovação ACAFE</strong> tem
+                </h2>
+                <div class="row gy-4">
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
+                        <div class="service-item position-relative">
+                            <div class="icon"><i class="bi bi-activity icon"></i></div>
+                            <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
+                        <div class="service-item position-relative">
+                            <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+                            <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
+                        <div class="service-item position-relative">
+                            <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+                            <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
+                        <div class="service-item position-relative">
+                            <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+                            <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        </div>
+                    </div><!-- End Service Item -->
                 </div>
+            </div>
+        </section><!-- End Featured Services Section -->
+    </main>
+    <main id="main">
+        <section style="padding-top: 5%;" id="featured-services" class="featured-services d-flex">
+            <div class="container text-end">
+                <h2 class="titulo-padrao text-center">
+                    O método tem <strong class="marcado">garantia de aprovação</strong>
+                </h2>
+                <div class="row align-items-center gy-4">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <p class="text-acafe"><span style="color: rgb(235, 41, 77);">Nós temos certeza da sua aprovação com o método</span>, que, caso você não seja aprovado você poderá participar do método gratuitamente até sua aprovação.</br></br></p>
+                        <a class="botao-padrao" href="">Clique e confira o edital</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="mx-auto d-block img-brasao" src="/assets/IMGS/brasão-acafe-dale.png"
+                            alt="Logo da Empresa" data-aos="fade-up" data-aos-delay="200" />
+                    </div>
+    </main>
+
+    <section class="vagas-acafe">
+        <div class="container">
+            <div class="row">
+
             </div>
         </div>
     </section>
 
-    <section class="d-flex align-items-center vh-50">
-        <div class="container d-flex text-center">
-
-        </div>
-    </section>
-
-
-
-    <script>
-        const SPREADSHEET_ID = '1wtLrishh1vDE6po1hg5SYfA6KQJyN5mF5Aw3aY0YWwE'; // ID da sua planilha do Google Sheets
-        const RANGE_NAME = 'DATABASE!A1:O32'; // Nome do intervalo de células que contém os dados a serem recuperados
-
-        // URL da API do Google Sheets
-        const API_URL = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE_NAME}`;
-        // Chave de acesso à API do Google Sheets
-        const API_KEY = 'AIzaSyAd_BfkpQbJudRHmSiaTOG-YV1GX8HPREI'; // Substitua esta linha pela sua chave de API
-
-        // Elementos HTML onde os valores serão exibidos
-        const vagasElem = document.getElementById('vagas');
-        const nomeElem = document.getElementById('nome');
-        const idadeElem = document.getElementById('idade');
-
-        // Faz uma requisição à API do Google Sheets para buscar os dados da planilha
-        fetch(`${API_URL}?key=${API_KEY}`)
-            .then(response => response.json()) // converte a resposta para JSON
-            .then(json => {
-                const data = json.values; // recupera os valores das células retornadas pela API
-
-                // Recupera o valor de uma célula específica (neste exemplo, a célula B3)
-                const vagas = data[2][1];
-                // Cria um elemento <span> com o valor recuperado e adiciona ao elemento vagasElem
-                const vagasSpan = document.createElement('span');
-                vagasSpan.textContent = vagas;
-                vagasElem.appendChild(vagasSpan);
-
-                // Recupera o valor de outra célula específica (neste exemplo, a célula D3)
-                const nome = data[2][3];
-                // Cria um elemento <p> com o valor recuperado e adiciona ao elemento nomeElem
-                const nomeP = document.createElement('p');
-                nomeP.textContent = nome;
-                nomeElem.appendChild(nomeP);
-
-                // Recupera o valor de uma terceira célula específica (neste exemplo, a célula F3)
-                const idade = data[2][5];
-                // Cria um elemento <div> com o valor recuperado e adiciona ao elemento idadeElem
-                const idadeDiv = document.createElement('div');
-                idadeDiv.textContent = idade;
-                idadeElem.appendChild(idadeDiv);
-            })
-            .catch(error => console.error(error)); // trata erros na requisição
-
-    </script>
-
+    <!-- SCRIPTS GERAIS -->
+    <script src="assets/EXTRAS/"></script>
+    <script src="assets/EXTRAS//aos/aos.js"></script>
+    <script src="assets/EXTRAS//glightbox/js/glightbox.min.js"></script>
+    <script src="assets/EXTRAS//isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/EXTRAS//swiper/swiper-bundle.min.js"></script>
+    <script src="assets/EXTRAS//php-email-form/validate.js"></script>
+    <script src="assets/JS/googlesheets.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
