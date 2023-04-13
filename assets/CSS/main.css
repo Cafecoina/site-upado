@@ -14,7 +14,7 @@
 
 .herosection {
   background-color: black;
-  background-image: url(./assets/IMGS/bg.png);
+  background-image: url(../IMGS/bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -171,6 +171,40 @@
   display: none;
   z-index: 2;
 }
+
+.list-acafe {
+  list-style-type: none; /* Remove o estilo de lista padrão */
+}
+
+.list-acafe li:before {
+  content: "\2714"; /* Inserir o caractere unicode para o símbolo de check */
+  font-family: Wingdings; /* Definir o tipo de fonte personalizada */
+  margin-right: 5px; /* Adicionar um espaço entre o símbolo e o texto do item da lista */
+  color: rgb(228, 16, 56);
+}
+
+.list-acafe li:hover {
+  color: rgb(228, 16, 56);
+}
+
+.text-acafe .marcado {
+  color: rgb(228, 16, 56);
+}
+.w-85 {
+  width: 85%;
+}
+
+.accordion-acafe {
+  color: white;
+}
+
+.button-acafe {
+  background-color: black;
+}
+
+
+
+
 
 /* CSS DE FORA */
 
