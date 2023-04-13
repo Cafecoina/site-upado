@@ -6,7 +6,7 @@
 
 .herosection {
     background-color: black;
-    background-image: url(assets/IMGS/bg.png);
+    background-image: url(/assets/IMGS/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,14 +112,14 @@
 }
 
 .guardiao {
-    background-image: url(assets/IMGS/background-guardiao.jpg);
+    background-image: url(/assets/IMGS/background-guardiao.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .guardiao2 {
-    background-image: url(assets/IMGS/background-guardiao2.jpg);
+    background-image: url(/assets/IMGS/background-guardiao2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
