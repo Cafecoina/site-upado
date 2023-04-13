@@ -112,14 +112,16 @@
 }
 
 .guardiao {
-    background-image: url(./assets/IMGS/background-guardiao.jpg);
+    background-color: black;
+    background-image: url('../assets/IMGS/background-guardiao');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .guardiao2 {
-    background-image: url(./assets/IMGS/background-guardiao2.jpg);
+    background-color: black;
+    background-image: url('../assets/IMGS/background-guardiao');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
