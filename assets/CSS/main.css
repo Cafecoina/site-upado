@@ -98,6 +98,7 @@
     font-size: 1.3rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    color: white;
 }
 
 .img-brasao {
@@ -924,7 +925,7 @@ section {
 --------------------------------------------------------------*/
 .featured-services {
     background-color: black;
-    padding: 5% 0%;
+    padding: 10% 0%;
 }
 
 .featured-services .service-item {
@@ -962,6 +963,7 @@ section {
   font-size: 14px;
   margin-bottom: 0;
   transition: ease-in-out 0.3s;
+  color: white;
 }
 
 .featured-services .service-item:hover {
@@ -1749,10 +1751,15 @@ section {
   }
 }
 
+.faq {
+    background-color: black;
+    padding: 8% 0%;
+}
+
 .faq .content h3 {
   font-weight: 400;
   font-size: 34px;
-  color: var(--color-secondary);
+  color: white;
 }
 
 .faq .content h4 {
@@ -1761,9 +1768,16 @@ section {
   margin-top: 5px;
 }
 
+.faq .titulo-padrao {
+    margin: 0 0 1% 0;
+}
+
 .faq .content p {
-  font-size: 15px;
-  color: var(--color-gray);
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  width: 50%;
+  margin: auto;
 }
 
 .faq .img {
@@ -1776,7 +1790,7 @@ section {
 .faq .accordion-item {
   border: 0;
   margin-top: 15px;
-  box-shadow: 0px 5px 25px 0px rgba(var(--color-black-rgb), 0.06);
+  box-shadow: 0px 5px 25px 0px rgba(white, 0.06);
 }
 
 .faq .accordion-collapse {
@@ -1788,15 +1802,16 @@ section {
   font-weight: 600;
   border: 0;
   font-size: 18px;
-  color: var(--color-default);
+  color: white;
   text-align: left;
-  background: var(--color-white);
+  background: var(--degrade-padrao);
   box-shadow: none;
   border-radius: 5px;
 }
 
 .faq .accordion-button:not(.collapsed) {
-  color: var(--color-primary);
+  color: white;
+  font-weight: bolder;
   border-bottom: 0;
   box-shadow: none;
 }
@@ -1806,21 +1821,21 @@ section {
   top: 14px;
   left: 25px;
   font-size: 20px;
-  color: var(--color-primary);
+  color: white;
 }
 
 .faq .accordion-button:after {
   position: absolute;
   right: 15px;
   top: 15px;
-  color: var(--color-primary);
+  color: white;
 }
 
 .faq .accordion-body {
   padding: 0 30px 25px 60px;
   border: 0;
   border-radius: 5px;
-  background: var(--color-white);
+  background: white;
   box-shadow: none;
 }
 
