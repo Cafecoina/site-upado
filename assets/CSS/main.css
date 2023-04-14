@@ -10,6 +10,7 @@
     rgba(231, 61, 27, 1) 0%,
     rgba(228, 16, 56, 1) 100%
   );
+  --bs-accent: rgba(228, 16, 56, 1);
 }
 
 .herosection {
@@ -174,6 +175,8 @@
 
 .list-acafe {
   list-style-type: none; /* Remove o estilo de lista padrão */
+  width: 80%;
+  line-height: 2.1rem;
 }
 
 .list-acafe li:before {
@@ -190,21 +193,41 @@
 .text-acafe .marcado {
   color: rgb(228, 16, 56);
 }
+
 .w-85 {
   width: 85%;
 }
 
-.accordion-acafe {
+/* CORPO FECHADO ACCORDION */
+.accordion-item button {
   color: white;
-}
-
-.button-acafe {
+  font-size: 1.2rem;
   background-color: black;
 }
 
+/* SETA ACCORDION */
+.accordion-item button::after {
+  background-color: white;
+  border-radius: 0.3rem;
+}
 
+/* ACCORDION ABERTO */
+.accordion-collapse {
+  background-color: white;
+  font-weight: bold;
+  color: black;
+}
 
+/* BORDA ACCORDION FECHADO */
+.accordion .accordion-item{
+  border: 0.2rem solid var(--bs-accent);
+  border-radius: 0.3rem;
+}
 
+.accordion-button:not(.collapsed) {
+  color: white !important;
+  background-color: var(--bs-accent) !important;
+}
 
 /* CSS DE FORA */
 
