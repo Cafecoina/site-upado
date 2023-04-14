@@ -40,6 +40,12 @@
   line-height: 3.2rem;
 }
 
+.titulo-padrao .marcado2 {
+  color: white;
+  background: black;
+  line-height: 3.2rem;
+}
+
 .botao-padrao {
   display: inline-block;
   background: rgb(228, 16, 56);
@@ -61,6 +67,23 @@
   background: var(--degrade-invertido-padrao);
   color: white;
   border-radius: 1rem;
+}
+
+.botao-padrao2 {
+  display: inline-block;
+  background: var(--degrade-padrao);
+  border-color: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 2rem;
+  color: white;
+  box-shadow:
+    5px 5px 25px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: 0.3s;
 }
 
 .vagas-acafe {
@@ -137,6 +160,13 @@
   background-position: center;
 }
 
+.guardiao3 {
+  background-color: black;
+  background-image: url(../IMGS/background-guardiao.jpg);
+  background-position: end;
+  background-repeat: no-repeat;
+}
+
 .fullscreen {
   position: relative;
   width: 100%;
@@ -194,6 +224,7 @@
   color: rgb(228, 16, 56);
 }
 
+
 .w-85 {
   width: 85%;
 }
@@ -227,6 +258,72 @@
 .accordion-button:not(.collapsed) {
   color: white !important;
   background-color: var(--bs-accent) !important;
+}
+
+
+
+
+
+
+.phone {
+  position: relative;
+  width: 50%; /* ajuste conforme necessário */
+  height: 100%; /* ajuste conforme necessário */
+  margin: auto;
+  z-index: 1;
+}
+
+.phone img {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+
+.phone-screen {
+  position: absolute;
+  top: 14%;
+  left: 6%;
+  width: 68%;
+  height: auto;
+  overflow: hidden; 
+  z-index: 1;
+}
+
+.phone-screen img {
+  max-height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.carousel-container {
+  position: relative;
+  width: 50%; /* ajuste conforme necessário */
+  height: auto; /* ajuste conforme necessário */
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  object-fit: cover;
+}
+
+
+.carousel-item {
+  margin: 0;
+}
+
+.carousel-img {
+  width: 65%;
+  margin: auto;
+  display: block;
+}
+
+.content-acafe {
+
 }
 
 /* CSS DE FORA */
