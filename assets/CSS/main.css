@@ -349,7 +349,7 @@
   font-size: 32px; /* Tamanho maior para o preço */
   position: absolute; /* Posição absoluta para ficar na lateral */
   top: 35%;
-  right: 5%;
+  right: 3%;
   margin-top: 10px; /* Margem superior para afastar do título */
   margin-right: 10px; /* Margem direita para afastar da borda */
 }
@@ -361,6 +361,16 @@
   border-radius: 1rem;
 }
 
+.valor-parcela {
+  position: absolute;
+  font-size: 1.5rem; /* Tamanho menor que o h6 */
+  color: white;
+  top: 55%;
+  right: -35%;
+  margin-top: 10px; /* Margem superior para afastar do título */
+  margin-right: 10px; /* Margem direita para afastar da borda */
+}
+
 .card-deck .active {
   background-color: var(--degrade-padrao);
   background: var(--degrade-padrao);
@@ -368,6 +378,7 @@
 
 .card p {
   color: white;
+  width: 65%;
 }
 
 .card h6 {
@@ -389,6 +400,31 @@
 
 .active h5 {
   color: white;
+}
+
+@media (max-width: 768px) {
+  .card-subtitle {
+    font-size: 32px; /* Tamanho maior para o preço */
+  }
+  
+  .card-deck .card {
+    margin: 2% auto;
+    background-color: black;
+    border: 0.3rem solid white;
+    border-radius: 1rem;
+  }
+
+  
+.card h5 {
+  color: var(--bs-accent);
+  font-size: 1rem;
+  font-weight: bold;
+}
+  
+  .valor-parcela {
+    font-size: 1.5rem; /* Tamanho menor que o h6 */
+    color: white;
+  }
 }
 
 
