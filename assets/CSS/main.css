@@ -13,12 +13,67 @@
   --bs-accent: rgba(228, 16, 56, 1);
 }
 
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.02);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  75% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.img-thumb {
+  background-image: url(../IMGS/thumb01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100%;
+}
+
+.guardiao {
+  background-color: black;
+  background-image: url(../IMGS/background-guardiao.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.guardiao2 {
+  background-color: black;
+  background-image: url(../IMGS/background-guardiao2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.guardiao3 {
+  background-color: black;
+  background-image: url(../IMGS/background-guardiao.jpg);
+  background-position: end;
+  background-repeat: no-repeat;
+}
+
 .herosection {
   background-color: black;
   background-image: url(../IMGS/bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .col-0 {
@@ -32,6 +87,7 @@
   font-size: 2.4rem;
   color: white;
   margin: 10% 5%;
+  padding: 0 5% 5% 0;
 }
 
 .titulo-padrao .marcado {
@@ -114,6 +170,11 @@
   position: relative;
 }
 
+.pulsante {
+  /* Definir a animação - duração, número de iterações, aceleração */
+  animation: pulsar 1s ease-out infinite;
+}
+
 .vagas-acafe-container {
   margin: 0%;
 }
@@ -165,29 +226,6 @@
   width: 70%;
   padding: 0;
   margin: 0;
-}
-
-.guardiao {
-  background-color: black;
-  background-image: url(../IMGS/background-guardiao.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.guardiao2 {
-  background-color: black;
-  background-image: url(../IMGS/background-guardiao2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-}
-
-.guardiao3 {
-  background-color: black;
-  background-image: url(../IMGS/background-guardiao.jpg);
-  background-position: end;
-  background-repeat: no-repeat;
 }
 
 .fullscreen {
@@ -347,11 +385,6 @@
 
 .card-subtitle {
   font-size: 32px; /* Tamanho maior para o preço */
-  position: absolute; /* Posição absoluta para ficar na lateral */
-  top: 35%;
-  right: 3%;
-  margin-top: 10px; /* Margem superior para afastar do título */
-  margin-right: 10px; /* Margem direita para afastar da borda */
 }
 
 .card-deck .card {
@@ -361,14 +394,21 @@
   border-radius: 1rem;
 }
 
+#button-active button {
+  background: white;
+  border: 0.3rem solid var(--bs-accent);
+  color: var(--bs-accent);
+  width: 100%;
+}
+
+#button-active button:hover {
+  border-radius: 2rem;
+  color: black;
+}
+
 .valor-parcela {
-  position: absolute;
   font-size: 1.5rem; /* Tamanho menor que o h6 */
   color: white;
-  top: 55%;
-  right: -30%;
-  margin-top: 10px; /* Margem superior para afastar do título */
-  margin-right: 10px; /* Margem direita para afastar da borda */
 }
 
 .card-deck .active {
@@ -378,7 +418,7 @@
 
 .card p {
   color: white;
-  width: 60%;
+  width: 100%;
 }
 
 .card h6 {
@@ -387,7 +427,7 @@
 }
 
 .active h6 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: white;
   font-weight: bold;
 }
@@ -401,33 +441,6 @@
 .active h5 {
   color: white;
 }
-
-@media (max-width: 768px) {
-  .card-subtitle {
-    font-size: 32px; /* Tamanho maior para o preço */
-  }
-  
-  .card-deck .card {
-    margin: 2% auto;
-    background-color: black;
-    border: 0.3rem solid white;
-    border-radius: 1rem;
-  }
-
-  
-.card h5 {
-  color: var(--bs-accent);
-  font-size: 1rem;
-  font-weight: bold;
-}
-  
-  .valor-parcela {
-    font-size: 1.5rem; /* Tamanho menor que o h6 */
-    color: white;
-  }
-}
-
-
 
 
 /* CSS DE FORA */
@@ -3363,4 +3376,72 @@ section {
 .footer .footer-legal .social-links a:hover {
   background: var(--color-primary);
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  .img-thumb {
+    background-image: url(../IMGS/thumb02.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .herosection {
+    margin: 0;
+    padding: 10% 0%;
+    background-position: center;
+  }
+
+  .herosection img {
+    width: auto;
+    height: auto;
+  }
+
+  .guardiao2 {
+    background-image: url(../IMGS/background-guardiao-safe.jpg);
+  }
+
+  .guardiao2 .col-md-6 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .guardiao2 button {
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 5% auto;
+  }
+
+  .img-brasao {
+    width: 100%;
+  }
+
+  .botao-padrao {
+    width: 80%;
+    align-items: center;
+  }
+
+  .list-acafe li {
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .text-acafe {
+    margin-left: 5%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .titulo-padrao {
+    font-size: 2rem;
+    padding: 5% 0;
+  }
+
+
+
 }
