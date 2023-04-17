@@ -366,7 +366,7 @@
   font-size: 1.5rem; /* Tamanho menor que o h6 */
   color: white;
   top: 55%;
-  right: -35%;
+  right: -30%;
   margin-top: 10px; /* Margem superior para afastar do título */
   margin-right: 10px; /* Margem direita para afastar da borda */
 }
@@ -378,7 +378,7 @@
 
 .card p {
   color: white;
-  width: 65%;
+  width: 60%;
 }
 
 .card h6 {
