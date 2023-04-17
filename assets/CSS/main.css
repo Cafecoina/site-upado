@@ -46,6 +46,8 @@
   line-height: 3.2rem;
 }
 
+
+
 .botao-padrao {
   display: inline-block;
   background: rgb(228, 16, 56);
@@ -60,6 +62,27 @@
   font-weight: bold;
   font-size: 1.4rem;
   transition: 0.3s;
+}
+
+.botao-padrao a {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.card.deactivated {
+  position: relative; /* Define a posição do elemento como relativa */
+}
+.card.deactivated::before {
+  content: ''; /* Cria um pseudo-elemento antes do conteúdo da div */
+  position: absolute; /* Define a posição do pseudo-elemento como absoluta */
+  top: 0; /* Alinha o topo do pseudo-elemento com o topo da div pai */
+  left: 0; /* Alinha a esquerda do pseudo-elemento com a esquerda da div pai */
+  height: 100%; /* Define a altura do pseudo-elemento como 100% da div pai */
+  width: 100%; /* Define a largura do pseudo-elemento como 100% da div pai */
+  background-color: rgba(0,0,0,0.5); /* Define uma cor de fundo semi-transparente */
+  z-index: 1; /* Coloca o quadrado acima do card-body */
+  border-radius: 1rem;
 }
 
 .botao-padrao:hover,
@@ -157,7 +180,7 @@
   background-image: url(../IMGS/background-guardiao2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: right;
 }
 
 .guardiao3 {
@@ -322,9 +345,54 @@
   display: block;
 }
 
-.content-acafe {
-
+.card-subtitle {
+  font-size: 32px; /* Tamanho maior para o preço */
+  position: absolute; /* Posição absoluta para ficar na lateral */
+  top: 35%;
+  right: 5%;
+  margin-top: 10px; /* Margem superior para afastar do título */
+  margin-right: 10px; /* Margem direita para afastar da borda */
 }
+
+.card-deck .card {
+  margin: 2% auto;
+  background-color: black;
+  border: 0.3rem solid white;
+  border-radius: 1rem;
+}
+
+.card-deck .active {
+  background-color: var(--degrade-padrao);
+  background: var(--degrade-padrao);
+}
+
+.card p {
+  color: white;
+}
+
+.card h6 {
+  font-size: 3rem;
+  color: white;
+}
+
+.active h6 {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+
+.card h5 {
+  color: var(--bs-accent);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.active h5 {
+  color: white;
+}
+
+
+
 
 /* CSS DE FORA */
 
