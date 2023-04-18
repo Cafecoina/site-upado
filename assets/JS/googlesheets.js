@@ -55,7 +55,6 @@ fetch(`${API_URL}?key=${API_KEY}`)
     const valor03 = parseFloat(
       valorCurso03.replace("R$ ", "").replace(",", ".")
     );
-      
 
     const parcela01 = valor01 / 10;
     const parcela02 = valor02 / 10;
@@ -81,13 +80,23 @@ fetch(`${API_URL}?key=${API_KEY}`)
     parcelasElement02.textContent = `10x de ${parcelaFormatada02}`;
     parcelasElement03.textContent = `10x de ${parcelaFormatada03}`;
 
-    const ocutar01 = data[2][3];
-    if (ocutar01 == 0) {
-      // Se o valor da célula for 0, oculta a div
-      divElem.style.display = "none";
-    } else if (ocutar01 == 1) {
-      // Se o valor da célula for 1, mostra a div
-      divElem.style.display = "block";
+    const statusCelula = data[2][3];
+
+    function atualizaStatusLote(statusCelula) {
+      console.log("O valor atual da célula é: ", statusCelula);
+
+      const sectionLive = document.getElementById("live");
+      const sectionLote = document.getElementById("lote");
+
+      if (statusCelula === "1") {
+        sectionLive.style.display = "block";
+        sectionLote.style.display = "none";
+      } else {
+        sectionLive.style.display = "none";
+        sectionLote.style.display = "block";
+      }
     }
+
   })
   .catch((error) => console.error(error)); // trata erros na requisição
+
