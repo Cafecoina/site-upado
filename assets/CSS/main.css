@@ -442,6 +442,57 @@
   color: white;
 }
 
+.dia-live {
+  background-color: black;
+  background-image: url(../IMGS/background-02.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gaveta {
+  width: 75%;
+  margin: auto;
+  padding: 5% 0%;
+  align-items: center;
+}
+
+.dia-live img {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.dia-live p {
+  color: black;
+  font-size: 1.5rem;
+  line-height: 90%;
+}
+
+.dia-live button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.logo-guardioes {
+  width: 30%;
+  margin: auto;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.dia-live h6 {
+  color: var(--bs-accent);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 8rem;
+  margin-top: -1rem;
+}
+
+.img-titulo {
+  width: 40%;
+}
 
 /* CSS DE FORA */
 
