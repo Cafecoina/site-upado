@@ -42,8 +42,8 @@
         <div class="container d-flex text-center">
             <div class="row flex-md-row-reverse w-100 d-flex align-content-center align-items-center flex-sm-row">
 
-                <div class="col-md-6">
-                    <img class="imagem-logo" src="assets/IMGS/LOGO-ACAFE.png" alt="Logo da Empresa" />
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img class="imagem-logo img-fluid" src="assets/IMGS/LOGO-ACAFE.png" alt="Logo da Empresa" />
                 </div>
                 <div class="col-md-6">
                     <h2 class="titulo-padrao">
@@ -58,7 +58,7 @@
 
     <!-- XXXXXXXXXX BLOCO VIDEO TELA TODA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
-    <main>
+    <main style="display: none;">
         <section class="fullscreen">
             <div class="media-container">
                 <img alt="" class="fullscreen-image img-thumb">
@@ -118,7 +118,7 @@
                         <p class="text-acafe">Nós temos tanta certeza disso que, caso siga e não seja aprovado, nós
                             disponibilizaremos o método gratuitamente até você conquistar a sua aprovação!</br></br></p>
                         <a target="_blank"
-                            href="https://drive.google.com/file/d/170nnMABVMPtkY2Iw9vtp90QZ7PLVbEyA/view"><button
+                            href="https://drive.google.com/file/d/1YKqtZWr2UbcIR4XWmfR2CpyZP50-QeUt/view"><button
                                 style="border: 0.1rem solid white ;" class="botao-padrao">Clique e confira o
                                 edital!</button></a>
                     </div>
@@ -333,12 +333,12 @@
         <div class="container w-75">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <iframe class="mx-auto d-block" width="100%" height="360"
-                        src="https://player.vimeo.com/video/753991015?&amp;rel=0&amp;autoplay=1&amp;mute=1"
-                        frameborder="0"
-                        allow="accelerometer; encrypted-media; gyroscope; fullscreen; picture-in-picture"
-                        allowfullscreen="">
-                    </iframe>
+                    <div class="video-wrapper">
+                        <iframe src="https://player.vimeo.com/video/753991015?&amp;rel=0&amp;autoplay=1&amp;mute=1"
+                            frameborder="0"
+                            allow="accelerometer; encrypted-media; gyroscope; fullscreen; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <p class="text-acafe">
@@ -466,33 +466,31 @@
                         <div class="card shadow active pulsante">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6">
                                         <h5 class="card-title">LOTE 01</h5>
                                         <p class="card-text">Lote disponível até <strong>20/04, às 23h59min</strong></p>
-                                        <a id="button-active" target="_blank"
-                                            href="https://pagamentos.aletech.com.br/pagamento?plan=3948c3668eb65bdf9b5ba6d7d3f3176a&e=MjM1MA%3D%3D"><button
-                                                class="botao-padrao">COMPRAR</button></a>
                                     </div>
-                                    <div class="col-md-6">
-                                        <h6 style="padding: 0;" id="a" class="card-subtitle2 mb-2"><span
-                                            class="span-preco01">R$</span> 507<span class="span-preco02">,20</span></h6>
-                                        <h6 id="valor-curso01" class="card-subtitle mb-2"></h6>
+                                    <div class="col-lg-6">
+                                        <h6 id="valor-curso01" class="card-subtitle"></h6>
                                         <p id="parcelas01" class="valor-parcela"></p>
                                     </div>
+                                    <a id="button-active" target="_blank"
+                                        href="https://pagamentos.aletech.com.br/pagamento?plan=3948c3668eb65bdf9b5ba6d7d3f3176a&e=MjM1MA%3D%3D"><button
+                                            class="botao-padrao">COMPRAR</button></a>
                                 </div>
                             </div>
                         </div>
                         <div class="card shadow deactivated">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6">
                                         <h5 class="card-title">Lote 2</h5>
                                         <p class="card-text">Lote disponível até <strong>21/04, às 23h59min</strong></p>
-                                        <a target="_blank"
+                                        <!-- <a target="_blank"
                                             href="https://pagamentos.aletech.com.br/pagamento?plan=3948c3668eb65bdf9b5ba6d7d3f3176a&e=MjM1MA%3D%3D"><button
-                                                class="botao-padrao">COMPRAR</button></a>
+                                                class="botao-padrao">COMPRAR</button></a> -->
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6">
                                         <h6 id="divC10" class="card-subtitle mb-2"></h6>
                                         <p id="parcelas02" class="valor-parcela"></p>
                                     </div>
@@ -502,14 +500,15 @@
                         <div class="card shadow deactivated">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6">
                                         <h5 class="card-title">Lote 3</h5>
-                                        <p class="card-text">Lote final até <strong>completar o número de vagas</strong></p>
-                                        <a target="_blank"
+                                        <p class="card-text">Lote final até <strong>completar o número de vagas</strong>
+                                        </p>
+                                        <!-- <a target="_blank"
                                             href="https://pagamentos.aletech.com.br/pagamento?plan=3948c3668eb65bdf9b5ba6d7d3f3176a&e=MjM1MA%3D%3D"><button
-                                                class="botao-padrao">COMPRAR</button></a>
+                                                class="botao-padrao">COMPRAR</button></a> -->
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6">
                                         <h6 id="divD10" class="card-subtitle mb-2"></h6>
                                         <p id="parcelas03" class="valor-parcela"></p>
                                     </div>
@@ -526,7 +525,7 @@
     <!-- XXXXXXXXXX BLOCO LIVE  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
     <section id="vendas" style="margin: 0; padding: 0;"></section>
-    <section id="live" style="margin: 0; padding: 0; display: none;">
+    <section id="live" style="margin: 0; padding: 0; display: block;">
         <section class="dia-live d-flex">
             <div class="container text-center m-auto">
 
@@ -545,7 +544,7 @@
                                         href="https://pagamentos.aletech.com.br/pagamento?plan=3948c3668eb65bdf9b5ba6d7d3f3176a&e=MjM1MA%3D%3D"><button
                                             class="botao-padrao pulsante">COMPRAR</button></a>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 align-content-center">
                                     <h6 style="padding: 0;" id="a" class="card-subtitle2 mb-2"><span
                                             class="span-preco01">R$</span> 507<span class="span-preco02">,20</span></h6>
                                     <p style="font-weight: bold; font-size: 2.5rem; margin-top: -1.5rem;" id="a"

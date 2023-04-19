@@ -7,6 +7,9 @@
       rgba(231, 61, 27, 1) 0%,
       rgba(228, 16, 56, 1) 100%);
   --bs-accent: rgba(228, 16, 56, 1);
+
+  --preco-base: 8rem;
+  --preco-RS: 3rem;
 }
 
 @keyframes pulsar {
@@ -31,17 +34,28 @@
   }
 }
 
-.imagem-logo {
-  width: 100%;
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
 }
 
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 .span-preco01 {
-  font-size: 3rem;
+  font-size: var(--preco-RS);
   margin-right: -2rem;
 }
 
 .span-preco02 {
-  font-size: 3rem;
+  font-size: var(--preco-RS);
   font-weight: bold;
   margin-top: -1.5rem;
 }
@@ -156,7 +170,8 @@
 .card.deactivated {
   position: relative;
   /* Define a posição do elemento como relativa */
-}
+} 
+
 
 .card.deactivated::before {
   content: '';
@@ -428,10 +443,6 @@
   display: block;
 }
 
-.card-subtitle {
-  font-size: 32px;
-  /* Tamanho maior para o preço */
-}
 
 .card-deck .card {
   margin: 2% auto;
@@ -456,6 +467,18 @@
   font-size: 1.5rem;
   /* Tamanho menor que o h6 */
   color: white;
+  margin: 0;
+  margin-top: -8%;
+  padding: 0;
+}
+
+#parcelas02,#parcelas03 {
+  font-size: 1.5rem;
+  /* Tamanho menor que o h6 */
+  color: white;
+  margin: 0;
+  margin-top: -5%;
+  padding: 0;
 }
 
 .card-deck .active {
@@ -465,13 +488,18 @@
 
 .card p {
   color: white;
+  font-size: 1.5vw;
   width: 100%;
+  line-height: 2rem;
+  padding-bottom: 1rem;
 }
+
 
 .card h6 {
   font-size: 3rem;
   color: white;
 }
+
 
 .active h6 {
   font-size: 4rem;
@@ -484,6 +512,7 @@
   font-size: 2rem;
   font-weight: bold;
 }
+
 
 .active h5 {
   color: white;
@@ -533,7 +562,7 @@
   color: var(--bs-accent);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
-  font-size: 8rem;
+  font-size: var(--preco-base);
   margin-top: -1rem;
 }
 
@@ -3454,6 +3483,73 @@ section {
   text-decoration: none;
 }
 
+
+
+
+@media screen and (max-width: 410px) {
+  .card-body h6 {
+    margin: 5% 0;
+    font-size: 20vw;
+  }
+
+  .span-preco01 {
+    font-size: 10vw;
+    margin-right: -5vw;
+  }
+
+  .span-preco02 {
+    font-size: 10vw;
+    font-weight: bold;
+    margin-top: -10vw;
+  }
+
+  .valor-parcela {
+    font-size: 8vw !important;
+    padding-top: 3vw;
+    color: white;
+    text-align: center;
+  }
+
+ #valor-curso01 h6 {
+    font-size: 15vw !important;
+    text-align: center;
+  }
+
+  .card p {
+    text-align: center;
+    font-size: 5vw;
+  }
+
+  .card h5 {
+    text-align: center;
+  }
+
+  .card.deactivated h6 {
+    font-size: 50vw;
+  }
+
+  .card a {
+    font-size: 10vw;
+  }
+
+  .dia-live h6 {
+    font-size: calc(var(--preco-base) - 2rem) !important;
+  }
+}
+
+
+
+@media screen and (max-height: 719px) {
+
+  #valor-curso01 h6 {
+    font-size: 4vw;
+  }
+
+  #parcelas01 .valor-parcela {
+    font-size: 3vw;
+  }
+}
+
 @media screen and (max-width: 768px) {
 
   .img-thumb {
@@ -3467,11 +3563,6 @@ section {
     margin: 0;
     padding: 10% 0%;
     background-position: center;
-  }
-
-  .herosection img {
-    width: auto;
-    height: auto;
   }
 
   .guardiao2 {
@@ -3590,40 +3681,107 @@ section {
     width: 100%;
   }
 
-  .imagem-logo {
-    width: 50vh !important;
+
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .dia-live h5 {
+    text-align: center !important;
+  }
+
+  .dia-live p {
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+
+}
+
+@media screen and (max-height: 1199px) {
+  .col-lg-6 {
+    width: 100%;
+  }
+  .card p {
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  .card h5 {
+    text-align: center;
+  }
+
+  .card.deactivated h6 {
+    font-size: 15vw;
+  }
+
+  .card h6 {
+    text-align: center;
+  }
+
+  .card button {
+    font-size: 2vw;
+  }
+   
+  .dia-live h6 {
+    font-size: calc( var(--preco-base) - 1rem );
   }
 
 }
 
-@media screen and (max-width: 410px) {
-  .card-body h6 {
-    margin: 5% 0;
-    font-size: 20vw;
+
+
+@media screen and (max-width: 1400px) {
+  .card-subtitle h6 {
+    font-size: 3vw;
   }
 
-  .span-preco01 {
-    font-size: 10vw;
-    margin-right: -5vw;
+  #valor-curso01 h6 {
+    font-size: 4vw;
   }
 
-  .span-preco02 {
-    font-size: 10vw;
-    font-weight: bold;
-    margin-top: -10vw;
+  .card.deactivated h6 {
+    font-size: 4vw;
+    text-align: center;
   }
 
-  .valor-parcela {
-    font-size: 8vw !important;
-    padding-top: 3vw;
-    color: white;
-  }
+
 }
 
-
-@media screen and (max-height: 719px) {
-  .herosection img {
-    height: 40vh;
-    width: auto;
+@media screen and (max-width: 3000px) {
+  .card.deactivated h6 {
+    font-size: 2rem;
   }
+
+  .card p {
+    font-size: 1.5rem;
+    text-align: start;
+    margin-left: 0.5rem;
+  }
+
+  .card.deactivated .valor-parcela {
+    text-align: center;
+  }
+
+  .card button {
+    font-size: 2rem;
+    border-radius: 2rem;
+  }
+
+  .card h5 {
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 0.5rem;
+  }
+
+  #a {
+    text-align: center;
+  }
+
+
 }
