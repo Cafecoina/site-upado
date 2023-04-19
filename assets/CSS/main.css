@@ -3486,7 +3486,7 @@ section {
 
 
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 450px) {
   .card-body h6 {
     margin: 5% 0;
     font-size: 20vw;
@@ -3516,7 +3516,7 @@ section {
   }
 
   .card p {
-    text-align: center;
+    text-align: center !important;
     font-size: 5vw;
   }
 
@@ -3535,6 +3535,9 @@ section {
   .dia-live h6 {
     font-size: calc(var(--preco-base) - 2rem) !important;
   }
+
+
+
 }
 
 
@@ -3550,7 +3553,7 @@ section {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
   .img-thumb {
     background-image: url(../IMGS/thumb02.png);
@@ -3694,8 +3697,13 @@ section {
     text-align: center !important;
   }
 
-  .dia-live p {
+  .card h6 {
+    font-size: 2rem !important;
+  }
+
+  .card p {
     text-align: center !important;
+    font-size: 1rem !important;    
   }
 }
 
