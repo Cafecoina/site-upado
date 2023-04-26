@@ -113,8 +113,8 @@
     <section id="gallery" class="gallery">
       <div class="container-fluid">
 
-        <div id="gallery-container" class="row gy-4 justify-content-center gallery-container">
-
+        <div class="row gy-4 justify-content-center">
+          <div id="gallery-container"></div>
 
         </div>
 
@@ -165,10 +165,16 @@
       data.forEach(function (item) {
         if (item.type === 'file' && item.name.match(/\.(jpg|jpeg|png|gif)$/)) {
           const galleryItem = document.createElement('div');
-          galleryItem.className = 'gallery-item';
+          galleryItem.className = 'col-xl-3 col-lg-4 col-md-6';
           galleryItem.innerHTML = `
-              <img src="${item.download_url}" alt="${item.name}">
-            `;
+            <div class="gallery-item h-100">
+              <img src="${item.download_url}" class="img-fluid" alt="${item.name}">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="${item.download_url}" title="${item.name}" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          `;
           galleryContainer.appendChild(galleryItem);
         }
       });
